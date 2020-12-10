@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="./css/base.css" />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
     <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="./css/grid.css" />
   </head>
 
   <body>
-    <div class="box">
-      <header class="header">
-        <div class="header__wrap">
+    <div class="box row">
+      <header class="header col-md">
+        <div class="header__wrap container">
           <div class="header__logo">aPhone</div>
-          <nav class="header__nav">
+          <nav class="header__nav d-none d-md-block">
             <a
               href="javascript:;"
               class="header__nav-item header__nav-item_status_active"
@@ -31,30 +32,39 @@
           </nav>
         </div>
       </header>
-      <div class="screen-1">
-        <h2 class="screen-1__heading screen-1__heading_animate_init">
-          <b>aPhone</b> Make your life more exciting
-        </h2>
-        <div class="screen-1__phone screen-1__phone_animate_init"></div>
-        <div class="screen-1__shadow screen-1__shadow_animate_init"></div>
+      <div class="screen-1 col-md">
+        <div class="container">
+          <!-- <h2 class="screen-1__heading screen-1__heading_animate_init d-none d-md-block">
+            <b>aPhone</b> Make your life more exciting
+          </h2> -->
+          <h2
+            class="screen-1__heading screen-1__heading_animate_init col-md-12"
+          >
+            <b>aPhone</b> Make your life more exciting
+          </h2>
+          <div class="screen-1__phone screen-1__phone_animate_init"></div>
+          <div class="screen-1__shadow screen-1__shadow_animate_init"></div>
+        </div>
       </div>
       <div class="screen-2">
-        <h2 class="screen-2__heading">Beautiful design, more fascinating</h2>
-        <h3 class="screen-2__subheading">
-          Use popular design to make it even better.<br />Gorgeous
-          high-definition display.
-        </h3>
-        <div class="screen-2__phone">
-          <div class="screen-2__point screen-2__point_i_1">HD camera</div>
-          <div
-            class="screen-2__point screen-2__point_custom_right screen-2__point_i_2"
-          >
-            Ultra-thin body
-          </div>
-          <div
-            class="screen-2__point screen-2__point_custom_right screen-2__point_i_3"
-          >
-            Large screen display
+        <div class="row">
+          <h2 class="screen-2__heading">Beautiful design, more fascinating</h2>
+          <h3 class="screen-2__subheading">
+            Use popular design to make it even better.<br />Gorgeous
+            high-definition display.
+          </h3>
+          <div class="screen-2__phone col-md">
+            <div class="screen-2__point screen-2__point_i_1">HD camera</div>
+            <div
+              class="screen-2__point screen-2__point_custom_right screen-2__point_i_2"
+            >
+              Ultra-thin body
+            </div>
+            <div
+              class="screen-2__point screen-2__point_custom_right screen-2__point_i_3"
+            >
+              Large screen display
+            </div>
           </div>
         </div>
       </div>
@@ -66,7 +76,7 @@
             Gorgeous high-definition display, the whole appearance is
             particularly delicate.
           </h3>
-          <div class="screen-3__phone"></div>
+          <div class="screen-3__phone d-none d-md-block"></div>
           <div class="screen-3__features">
             <div class="screen-3__features__item">
               <div class="screen-3__features__item__number">5.7</div>
@@ -89,10 +99,13 @@
           </div>
         </div>
       </div>
-      <div class="screen-4">
+      <div class="screen-4 col-md">
         <div class="screen-4__wrap">
-          <h2 class="screen-4__heading">Mobile phone models</h2>
-          <h3 class="screen-4__subheading">Find the phone that suits you</h3>
+          <div class="container">
+            <h2 class="screen-4__heading">Mobile phone models</h2>
+            <h3 class="screen-4__subheading">Find the phone that suits you</h3>
+          </div>
+
           <div class="screen-4__type">
             <div class="screen-4__type__item screen-4__type__item_i_1">
               <div class="screen-4__type__item__color">Ruby</div>
@@ -115,7 +128,7 @@
         </div>
         <!--end warp-->
       </div>
-      <div class="screen-5">
+      <div class="screen-5 col-md">
         <h2 class="screen-5__heading">
           Games, learning, taking pictures, one is enough
         </h2>
